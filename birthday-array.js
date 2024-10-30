@@ -40,6 +40,8 @@ function birthday(s, d, m) {
     if (currentSum === d) matches++;
   }
 
+  debugger;
+
   return matches;
 }
 

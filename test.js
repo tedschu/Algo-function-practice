@@ -1,13 +1,8 @@
-function miniMaxSum(arr) {
-  const sumArray = arr.reduce((acc, current) => acc + current, 0);
+let i = 0;
 
-  const minNum = Math.min(...arr); // spreads the array into individual elements
-  const maxNum = Math.max(...arr);
-
-  const minSum = sumArray - maxNum;
-  const maxSum = sumArray - minNum;
-
-  console.log(minSum + " " + maxSum);
+for (i = 0; i < 3; i++) {
+  setTimeout(() => console.log(i), 800);
+  console.log(i);
 }
 
-miniMaxSum([7, 69, 2, 221, 8974]);
+console.log(i);

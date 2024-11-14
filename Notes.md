@@ -9,3 +9,4 @@
   - Closures are a special version of scoping relating to nested functions
   - Benefits: can create private variables that a function can operate on that isn't accessible outside of the function.
   - Benefits: great for passing a variable into a "helper function" that creates new elements (e.g. a div)...so you can pass in a div (for ex) and it will return a function that creates a div.
+- Composition function: is a function that combines two or more functions to create a new function where the result of one function becomes the input to the next. It's often written as (f ∘ g)(x), meaning "apply g first, then apply f to that result."

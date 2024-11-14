@@ -42,3 +42,26 @@ function func1(age) {
 
 const result = func1(39);
 result();
+
+// https://exercism.org/tracks/javascript/exercises/coordinate-transformation/edit
+/**
+ * Create a function that returns a function making use of a closure to
+ * perform a repeatable 2d translation of a coordinate pair.
+ *
+ * @param {number} dx the translate x component
+ * @param {number} dy the translate y component
+ *
+ * @returns {function} a function which takes an x, y parameter, returns the
+ *  translated coordinate pair in the form [x, y]
+ */
+
+//
+function translate2d(dx, dy) {
+  return function (x, y) {
+    // returns a function which takes in params (x, y)
+    return [x + dx, y + dy]; // inside the function, returns an array with two args, each of which add values from the parent function (closure)
+  };
+}
+
+const translatorFunc = translate2d(1, 5);
+console.log(translatorFunc(-4, 1));
